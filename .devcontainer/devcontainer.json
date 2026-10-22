@@ -1,0 +1,13 @@
+{
+  "name": "welgain Frame playground",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-24-bookworm",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "welgain Frame playground",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "npm ci --cache /tmp/welgain-npm-cache",
+  "postStartCommand": "bash .devcontainer/start.sh"
+}
